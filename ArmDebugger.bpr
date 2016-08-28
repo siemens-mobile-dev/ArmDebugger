@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="ArmDebugger.exe"/>
+    <OBJFILES value="ArmDebugger.obj DForm.obj SaveMemory.obj SaveProgressWin.obj About.obj 
+      comm.obj GotoWindow.obj BootWindow.obj Search.obj Wire.obj EventLog.obj 
+      Config.obj CallAddress.obj PatchWindow.obj PatchesWindow.obj Pages.obj 
+      Debug.obj CP15Window.obj RAMAccess.obj Utility.obj AutoCGSN.obj Disarm.obj 
+      NewWatch.obj EditAsc.obj Assembler.obj ConfEdit.obj MemoryMap.obj 
+      Calculator.obj Xrefs.obj Bookmarks.obj Watchpoint.obj Snappoints.obj 
+      Nucleus.obj FlashMap.obj parser.obj IniFile.obj SearchResults.obj 
+      SearchProgressWin.obj Terminal.obj Vkp.obj"/>
+    <RESFILES value="ArmDebugger.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) DForm.dfm SaveMemory.dfm SaveProgressWin.dfm About.dfm 
+      GotoWindow.dfm BootWindow.dfm Search.dfm CallAddress.dfm PatchWindow.dfm 
+      PatchesWindow.dfm CP15Window.dfm RAMAccess.dfm AutoCGSN.dfm NewWatch.dfm 
+      EditAsc.dfm Assembler.dfm ConfEdit.dfm MemoryMap.dfm Calculator.dfm 
+      Xrefs.dfm Bookmarks.dfm Watchpoint.dfm Snappoints.dfm Nucleus.dfm 
+      FlashMap.dfm SearchResults.dfm SearchProgressWin.dfm Terminal.dfm Vkp.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi cds.bpi dsnap.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi dbexpress.bpi dbxcds.bpi 
+      bcb2kaxserver.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="ArmDebugger.cpp"/>
+    <INCLUDEPATH value="icons;D:\CBuilder6\Bin;D:\CBuilder6\Projects;..\..\Bin;..;ArmDebugger;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="icons;D:\CBuilder6\Bin;D:\CBuilder6\Projects;..\..\Bin;..;ArmDebugger;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-Iicons -ID:\CBuilder6\Bin -ID:\CBuilder6\Projects -I..\..\Bin -I.. 
+      -IArmDebugger -I$(BCB)\include -I$(BCB)\include\vcl -src_suffix cpp 
+      -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -5 -b- -k -y -v -vi- 
+      -c -tW -tWM"/>
+    <PFLAGS value="-$Y+ -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="ArmDebugger.res" FORMNAME="" UNITNAME="ArmDebugger.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ArmDebugger.cpp" FORMNAME="" UNITNAME="ArmDebugger" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DForm.cpp" FORMNAME="MainForm" UNITNAME="DForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SaveMemory.cpp" FORMNAME="SaveMem" UNITNAME="SaveMemory" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SaveProgressWin.cpp" FORMNAME="SaveProgress" UNITNAME="SaveProgressWin" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="About.cpp" FORMNAME="AboutForm" UNITNAME="About" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="comm.cpp" FORMNAME="" UNITNAME="comm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GotoWindow.cpp" FORMNAME="GotoForm" UNITNAME="GotoWindow" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BootWindow.cpp" FORMNAME="BootForm" UNITNAME="BootWindow" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Search.cpp" FORMNAME="SearchForm" UNITNAME="Search" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Wire.cpp" FORMNAME="" UNITNAME="Wire" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EventLog.cpp" FORMNAME="" UNITNAME="EventLog" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Config.cpp" FORMNAME="" UNITNAME="Config" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CallAddress.cpp" FORMNAME="CallForm" UNITNAME="CallAddress" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PatchWindow.cpp" FORMNAME="PatchForm" UNITNAME="PatchWindow" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PatchesWindow.cpp" FORMNAME="PatchesForm" UNITNAME="PatchesWindow" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Pages.cpp" FORMNAME="" UNITNAME="Pages" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Debug.cpp" FORMNAME="" UNITNAME="Debug" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CP15Window.cpp" FORMNAME="CP15Form" UNITNAME="CP15Window" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RAMAccess.cpp" FORMNAME="AccessAnalyzer" UNITNAME="RAMAccess" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Utility.cpp" FORMNAME="" UNITNAME="Utility" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AutoCGSN.cpp" FORMNAME="AutoCGSNform" UNITNAME="AutoCGSN" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Disarm.cpp" FORMNAME="" UNITNAME="Disarm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NewWatch.cpp" FORMNAME="NewWatchForm" UNITNAME="NewWatch" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EditAsc.cpp" FORMNAME="EditAscForm" UNITNAME="EditAsc" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Assembler.cpp" FORMNAME="AssemblerForm" UNITNAME="Assembler" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ConfEdit.cpp" FORMNAME="ConfigForm" UNITNAME="ConfEdit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MemoryMap.cpp" FORMNAME="MMapView" UNITNAME="MemoryMap" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Calculator.cpp" FORMNAME="CalcForm" UNITNAME="Calculator" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Xrefs.cpp" FORMNAME="XrefForm" UNITNAME="Xrefs" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Bookmarks.cpp" FORMNAME="BkForm" UNITNAME="Bookmarks" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Watchpoint.cpp" FORMNAME="WptForm" UNITNAME="Watchpoint" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Snappoints.cpp" FORMNAME="SnapsForm" UNITNAME="Snappoints" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Nucleus.cpp" FORMNAME="NuForm" UNITNAME="Nucleus" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FlashMap.cpp" FORMNAME="MapForm" UNITNAME="FlashMap" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="parser.cpp" FORMNAME="" UNITNAME="parser" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IniFile.cpp" FORMNAME="" UNITNAME="IniFile" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SearchResults.cpp" FORMNAME="SearchResForm" UNITNAME="SearchResults" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SearchProgressWin.cpp" FORMNAME="SearchProgress" UNITNAME="SearchProgressWin" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Terminal.cpp" FORMNAME="TerminalForm" UNITNAME="Terminal" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Vkp.cpp" FORMNAME="VkpForm" UNITNAME="Vkp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1049
+CodePage=1251
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=4
+Item0=icons;D:\CBuilder6\Bin;D:\CBuilder6\Projects;..\..\Bin;..;ArmDebugger;$(BCB)\include;$(BCB)\include\vcl
+Item1=D:\CBuilder6\Bin;D:\CBuilder6\Projects;..\..\Bin;..;ArmDebugger;$(BCB)\include;$(BCB)\include\vcl
+Item2=D:\CBuilder6\Projects;..\..\Bin;..;ArmDebugger;$(BCB)\include;$(BCB)\include\vcl
+Item3=..\..\Bin;..;ArmDebugger;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=4
+Item0=icons;D:\CBuilder6\Bin;D:\CBuilder6\Projects;..\..\Bin;..;ArmDebugger;$(BCB)\lib\obj;$(BCB)\lib
+Item1=D:\CBuilder6\Bin;D:\CBuilder6\Projects;..\..\Bin;..;ArmDebugger;$(BCB)\lib\obj;$(BCB)\lib
+Item2=D:\CBuilder6\Projects;..\..\Bin;..;ArmDebugger;$(BCB)\lib\obj;$(BCB)\lib
+Item3=..\..\Bin;..;ArmDebugger;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+  </IDEOPTIONS>
+</PROJECT>

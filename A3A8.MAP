@@ -1,0 +1,61 @@
+LA ARM LINKER/LOCATER V2.01a                                                            07/22/2005  16:51:29  PAGE 1
+
+
+LA ARM LINKER/LOCATER V2.01a, INVOKED BY:
+D:\M65\KEIL\ARM\BIN\LA.EXE A3A8.OBJ, _STARTUP.OBJ
+
+
+CPU MODE: LITTLE ENDIAN
+
+
+INPUT MODULES INCLUDED:
+  A3A8.OBJ (a3a8)
+         COMMENT TYPE 0: CA V2.00
+  _STARTUP.OBJ (_STARTUP)
+         COMMENT TYPE 0: AA V2.00
+  D:\M65\KEIL\ARM\LIB\CAL.LIB (SDIV)
+         COMMENT TYPE 0: AA V2.00
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  A3A8 (a3a8)
+
+BASE       START      END        USED       MEMORY CLASS
+========================================================
+00000000H  00000000H  FFFFFFFFH  00000404H  CODE
+00000000H  00000000H  FFFFFFFFH  00000440H  CONST
+00000000H  00000000H  FFFFFFFFH  00000014H  DATA
+
+
+
+MEMORY MAP OF MODULE:  A3A8 (a3a8)
+
+
+START      STOP       LENGTH    ALIGN  RELOC  MEMORY CLASS   SEGMENT NAME
+=========================================================================
+00000000H  00000003H  00000004H     4  AT..   CODE           STARTUPCODE
+00000004H  0000040FH  0000040CH     4  UNIT   CONST          ?CON?a3a8
+00000410H  00000423H  00000014H     4  UNIT   DATA           ?DT0?a3a8
+00000424H  00000433H  00000010H     4  UNIT   CONST          ?C_CLRSEG
+00000434H  00000457H  00000024H     4  UNIT   CONST          ?C_INITSEG
+00000458H  0000076BH  00000314H     4  UNIT   CODE           ?PR?A3A8?A?a3a8
+0000076CH  000007F7H  0000008CH     4  UNIT   CODE           ?PR?main?a3a8
+000007F8H  00000857H  00000060H     4  UNIT   CODE           ?PR?C?SDIV
+
+
+
+PUBLIC SYMBOLS OF MODULE:  A3A8 (a3a8)
+
+
+      VALUE      CLASS    TYPE      PUBLIC SYMBOL NAME
+      ================================================
+      00000424H  ---      ---       ?C?CLRTAB
+      0000076CH  ---      ---       ?C?INIT
+      00000434H  ---      ---       ?C?INITTAB
+      000007FCH  CODE     ---       ?C?SDIV?A
+      000007F8H  CODE     ---       ?C?SDIV?T
+      00000458H  CODE     ---       A3A8?A
+      00000000H  CODE     ---       __startup
+      000007D4H  CODE     ---       main
+
+Program Size: data=20 const=1088 code=1028
+LA RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
